@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "sourceMap": false,
+    "declaration": false,
+    "removeComments": false,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "types": [
+      "node",
+      "@wdio/globals/types",
+      "expect-webdriverop",
+      "@wdio/cucumber-framework",
+      "@wdio/types"
+    ],
+  }
+}

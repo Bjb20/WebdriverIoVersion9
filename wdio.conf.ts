@@ -2,8 +2,10 @@ import { generate } from 'multiple-cucumber-html-reporter';
 import { browser } from '@wdio/globals';
 import type { Options } from '@wdio/types';
 
-// If throws error switch to -  export const config = {
-export const config: Options.Testrunner = {
+// If throws error switch to -  
+export const config = {
+  // If throws error switch to - 
+//export const config: Options.Testrunner = {
   
   automationProtocol: 'webdriver',
 
@@ -56,7 +58,7 @@ export const config: Options.Testrunner = {
   ],
 
   cucumberOpts: {
-    require: ['./test/step-definitions/*.ts'],
+    require: ['./test/step-definitions/test-step.ts'],
     requireModule: ['ts-node/register'],
     backtrace: false,
     dryRun: false,

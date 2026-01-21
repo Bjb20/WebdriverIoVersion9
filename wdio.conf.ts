@@ -2,7 +2,9 @@ import { generate } from 'multiple-cucumber-html-reporter';
 import { browser } from '@wdio/globals';
 import type { Options } from '@wdio/types';
 
+// If throws error switch to -  export const config = {
 export const config: Options.Testrunner = {
+  
   automationProtocol: 'webdriver',
 
   // Host configuration
